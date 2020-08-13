@@ -1,0 +1,43 @@
+package com.nt.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class DeleteStudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//delete from student where sid=101;
+		//local variable declaration
+		Scanner sc=null;
+		int empid=0;
+		Connection con=null;
+		Statement st=null;
+		try
+		{
+		sc=new Scanner(System.in);
+		if(sc!=null)
+		{
+			System.out.println("Enter the emp id to be deleted:::");
+			empid=sc.nextInt();
+			
+			
+		}
+		//load Driver class
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		//establish the connection
+		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","shiva","shiva1234");
+		//creating statement object
+		st=con.createStatement();
+		
+		}
+		catch(Exception e)
+		{
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.sql.*;
+
+
+class connectionTest 
+{
+	
+	public static void main(String[] args) throws Exception
+	{
+		
+		
+		
+		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:orcl","shiva","shiva1234");    //DriverManager.getConnection(url,username,password);
+        if(con==null)
+			System.out.println("connection failed to established");
+		else
+			System.out.println("Connection established successfully ");
+	}
+}
