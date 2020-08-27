@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+D:\shivajavafullstack\shiva adv java projects\jdbc\.metadata\.plugins\org.eclipse.jdt.core
-3206878013.index
-3113525638.index
-2872044937.index
