@@ -1,0 +1,26 @@
+package jdbc;
+
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class CustomerBillingUsingPreparedStatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//local variables declaration
+		Scanner sc=null;
+		try
+		{
+			sc=new Scanner(System.in);
+			
+		}
+		catch(SQLException se)
+		{
+			se.printStackTrace();
+		}
+		
+		
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package jdbc;
+
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class CustomerBillingUsingPreparedStatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//local variables declaration
+		Scanner sc=null;
+		int cno=0,cbill=0;
+		String cname=null,cadd=null;
+		try
+		{
+			sc=new Scanner(System.in);
+			//read the inputs
+			if(sc!=null)
+			{
+				System.out.println("Enter customer number:::");
+				cno=sc.nextInt();
+				System.out.println("Enter customer name:::");
+				cname=sc.nextLine();
+				System.out.println("Enter customer address:::");
+				cadd=sc.nextLine();
+				System.out.println("Enter customer bill amount:::");
+				cbill=sc.nextInt();
+				
+				
+			}
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		
+
+	}
+
+}
